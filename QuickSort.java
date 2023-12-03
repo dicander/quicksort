@@ -8,10 +8,11 @@ public class QuickSort {
     // stores them in an array sorts them, then prints them to the console.
     public static void main(String[] args) {
         //Kattio io = new Kattio(System.in, System.out);
-        //int n = io.getInt();
+        int n = 1000000;;
         int[] a = new int[n];
+        Random r = new Random();
         for (int i = 0; i < n; i++)
-            a[i] = Random.nextInt(1000000);
+            a[i] = r.nextInt(1000000);
         if (true) //(args.length > 0 && args[0].equals("quick"))
             quickSort(a);
         else if (args.length > 0 && args[0].equals("Arrays.sort"))
